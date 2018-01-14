@@ -1,0 +1,5 @@
+{% block body %}
+    <h1>{{ status_code }} {{ status_text }}</h1>
+    <br />
+    <h2>{{ exception.message|nl2br|format_file_from_text }}</h2>
+{% endblock %}

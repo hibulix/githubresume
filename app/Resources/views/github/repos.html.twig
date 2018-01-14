@@ -1,0 +1,19 @@
+<div class="well">
+    All Repositories:
+
+    <div class="pull-right">
+        <span class="label label-primary">Repositories: {{ repo_count }}</span>
+    </div>
+</div>
+
+<div class="panel panel-default">
+    <div class="panel-heading">
+        <h3 class="panel-title">Repository List</h3>
+    </div>
+
+    <ul class="list-group">
+        {% for repo in repos %}
+            <li class="list-group-item">{% include ':github:repo.html.twig' %}</li>
+        {% endfor %}
+    </ul>
+</div>
